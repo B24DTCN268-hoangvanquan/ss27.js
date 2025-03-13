@@ -1,14 +1,14 @@
-function sum(a, b) {
+let add = function (a, b) {
     return a + b;
 }
-function minus() { }
-let minus 
-function multi() {
-    return a * b
- }
+let subtract = function (a, b) {
+    return a - b;
+}
+let multiply = function (a, b) {
+    return a * b;
+}
 let divide = function (a, b) {
-    console.log(a / b);
-
+    return a / b;
 }
 let choice;
 do {
@@ -22,22 +22,29 @@ do {
     
     switch (choice) {
         case 1:
+            console.log(add(a,b));
             
             break;
         case 2:
+            console.log(subtract(a,b));
+            
 
             break;
         case 3:
+            console.log(multiply(a, b));
 
             break;
         case 4:
-
+            console.log(divide(a, b));
             break;
         case 5:
-
+            console.log("Thoát");
+            
             break;
         
         default:
+            console.log("Nhập lại");
+            
             break;
     }
 } while (choice !==5);
